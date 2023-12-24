@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: red;
+    background-color: #A6A6A6;
+}
+
+#nobutton{
+    position: absolute;
+    margin-left: 150px;
+    transition: .5s;
+}
+
+#yesbutton{
+    position: absolute;
+    margin-right: 150px;
+}
+
+.ht{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn{
+    height: 50px;
+    width: 80px;
+    background: #F80949;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 50px;
+    border: 1.5px solid;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    box-shadow: #F80949 0 0 10px;
+}
+
+.gifcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.we{
+    animation: hehe 9s 1  ease;
+}
+
+@keyframes hehe {
+    from{
+        gap: 1300px;
+    }
+    to{
+        gap: 0px;
+    }
+}
+
+.he{
+    overflow: hidden;
+}
+
+img{
+    height: 400px;
+}

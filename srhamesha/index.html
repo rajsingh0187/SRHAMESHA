@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRHAMESHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="ht">Do you wanna go out with me?</h1>
+        </div>
+        <div class="gifcont">
+            <img src="1.gif" alt="">
+        </div>
+        <div class="button">
+            <button class="btn" id="yesbutton" onclick="nextpage()">Yes🌻</button>
+            <button class="btn" id="nobutton" onmouseover="movebtn()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function nextpage(){
+            window.location.href = "yes.html";
+        }
+
+        function movebtn(){
+            var x = Math.random() * (window.innerWidth - document.getElementById('nobutton').offsetWidth);
+            var y = Math.random() * (window.innerHeight - document.getElementById('nobutton').offsetHeight);
+            document.getElementById('nobutton').style.left = `${x-150}px`;
+            document.getElementById('nobutton').style.top = `${y-200}px`;
+
+        }
+    </script>
+</body>
+</html>
